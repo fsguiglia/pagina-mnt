@@ -4,8 +4,8 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 186, 191, 217;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +30,31 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+#descargas p a {
+  background-color: rgba(211,230,255,1);
+}
+
+#publicaciones p a {
+  background-color: rgba(211,230,255,1);
+}
+
+#tutoriales p a {
+  background-color: rgba(211,230,255,1);
+}
+
+#contacto p a {
+  background-color: rgba(211,230,255,1);
 }

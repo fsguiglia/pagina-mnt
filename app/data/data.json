@@ -1,0 +1,13 @@
+{
+  "portada": 
+  {
+	  "titulo1": "El mapa no es el territorio",
+	  "bajada": "MNT es una aplicación de código abierto. Ofrece herramientas para controlar sonidos e imágenes a través de movimientos. Genera mapas interactivos que pueden conectarse con otras aplicaciones o sintetizadores de hardware.",
+	  "cuerpo": "Generá sets conectando módulos y controlalos a través de controladores MIDI, joysticks o sensores. MNT envía MIDI y OSC, conectándose fácilmente con DAWs como Ableton Live y con software para VJs como Resolume Arena."
+  },
+  "prueba": 
+  {
+	  "titulo1": "Esto es una prueba",
+	  "bajada": "Estamos probando cosas."
+  }
+}

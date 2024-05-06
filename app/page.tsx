@@ -125,7 +125,7 @@ export default async function Home() {
               <Link href="https://www.nime.org/proceedings/2019/nime2019_paper029.pdf">
                 El Mapa no es el Territorio: sensor mapping for audiovisual performances. 
               </Link>
-              . En Proceedings of the international conference on New Interfaces for Musical Expression (NIME '19).
+              . En Proceedings of the international conference on New Interfaces for Musical Expression ({`NIME '19`}).
             </p>
           </div>
       </div>

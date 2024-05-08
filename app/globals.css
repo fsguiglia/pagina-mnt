@@ -42,19 +42,3 @@ body {
     scrollbar-width: none; /* Firefox */
   }
 }
-
-#descargas p a {
-  background-color: rgba(211,230,255,1);
-}
-
-#publicaciones p a {
-  background-color: rgba(211,230,255,1);
-}
-
-#tutoriales p a {
-  background-color: rgba(211,230,255,1);
-}
-
-#contacto p a {
-  background-color: rgba(211,230,255,1);
-}

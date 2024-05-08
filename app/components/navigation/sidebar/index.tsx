@@ -10,7 +10,7 @@ const Sidebar = ({
   return (
     <>
       <div
-        className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white grid pt-[120px] left-0 z-10"
+        className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white/90 grid pt-[120px] left-0 z-10"
         style={{
           opacity: `${isOpen ? "1" : "0"}`,
           top: ` ${isOpen ? "0" : "-100%"}`,
@@ -32,26 +32,26 @@ const Sidebar = ({
         </button>
 
         <ul className="sidebar-nav text-center leading-relaxed text-xl">
-         <li>
-            <Link href="#descargas">
-                <p>Descargas</p>
-            </Link>
-            </li>
-            <li>
-            <Link href="#articulos">
-                <p>Articulos</p>
-            </Link>
-            </li>
-            <li>
-            <Link href="https://www.sguiglia.com.ar/">
-                <p>Contacto</p>
-            </Link>
-            </li>
-            <li>
-            <Link href="https://www.youtube.com/">
-                <p>Tutoriales</p>
-            </Link>
-            </li>
+              <li>
+                <Link href="#descargas" onClick={toggle}>
+                  <p>Descargas</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="#tutoriales" onClick={toggle}>
+                  <p>Tutoriales</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="#contacto" onClick={toggle}>
+                  <p>Contacto</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="#publicaciones" onClick={toggle}>
+                  <p>Publicaciones</p>
+                </Link>
+              </li>
         </ul>
       </div>
     </>

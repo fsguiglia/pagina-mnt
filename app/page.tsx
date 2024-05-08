@@ -56,7 +56,7 @@ export default async function Home() {
                 Descargas
               </h1>
             </div>
-            <div className="md:text-2xl relative">
+            <div className="md:text-2xl">
               <p className="pb-5">
                 <Link href="https://d17ccq4m3xjsbi.cloudfront.net/mnt/MNT2.zip" className="bg-sky-100 dark:bg-white dark:text-black">
                   Ejecutable (Windows x64)

@@ -10,7 +10,7 @@ const Sidebar = ({
   return (
     <>
       <div
-        className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white/90 grid pt-[120px] left-0 z-10"
+        className="sidebar-container fixed w-full h-full overflow-hidden justify-center bg-white grid pt-[120px] left-0 z-10"
         style={{
           opacity: `${isOpen ? "1" : "0"}`,
           top: ` ${isOpen ? "0" : "-100%"}`,
@@ -34,22 +34,22 @@ const Sidebar = ({
         <ul className="sidebar-nav text-center leading-relaxed text-xl text-black dark:text-black">
               <li>
                 <Link href="#descargas" onClick={toggle}>
-                  <p>Descargas</p>
+                  <p className="mb-3 bg-sky-100 px-3">Descargas</p>
                 </Link>
               </li>
               <li>
                 <Link href="#tutoriales" onClick={toggle}>
-                  <p>Tutoriales</p>
+                <p className="mb-3 bg-sky-100 px-3">Tutoriales</p>
                 </Link>
               </li>
               <li>
                 <Link href="#contacto" onClick={toggle}>
-                  <p>Contacto</p>
+                <p className="mb-3 bg-sky-100 px-3">Contacto</p>
                 </Link>
               </li>
               <li>
                 <Link href="#publicaciones" onClick={toggle}>
-                  <p>Publicaciones</p>
+                  <p className="mb-3 bg-sky-100 px-3">Publicaciones</p>
                 </Link>
               </li>
         </ul>

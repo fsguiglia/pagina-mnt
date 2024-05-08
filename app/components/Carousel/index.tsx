@@ -12,7 +12,7 @@ const slides = [{id: '1', value: '/1.png'},
   return (
     <div>
       <Carousel
-        showArrows={true}
+        showArrows={false}
         infiniteLoop={true}
         dynamicHeight={false}
         showStatus={false}

@@ -20,11 +20,9 @@ const slides = [{id: '1', value: '/1.png'},
         autoPlay={true}
       >
         {slides.map((item) => (
-          <div>
             <div key={item.id}>
-                <Image src={item.value} width="1366" height="738" alt="MNT" />
+                <Image key={item.id} src={item.value} width="1366" height="738" alt="MNT" />
             </div>
-          </div>
         ))}
       </Carousel>
     </div>

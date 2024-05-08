@@ -21,7 +21,7 @@ const slides = [{id: '1', value: '/1.png'},
       >
         {slides.map((item) => (
           <div>
-            <div>
+            <div key={item.id}>
                 <Image src={item.value} width="1366" height="738" alt="MNT" />
             </div>
           </div>

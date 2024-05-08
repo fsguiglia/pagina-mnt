@@ -58,19 +58,19 @@ export default async function Home() {
             </div>
             <div className="md:text-2xl relative">
               <p className="pb-5">
-                <Link href="https://d17ccq4m3xjsbi.cloudfront.net/mnt/MNT2.zip" className="bg-sky-100 dark:bg-transparent">
+                <Link href="https://d17ccq4m3xjsbi.cloudfront.net/mnt/MNT2.zip" className="bg-sky-100 dark:bg-white dark:text-black">
                   Ejecutable (Windows x64)
                 </Link>. 
-                Requiere <Link href="https://aka.ms/vs/16/release/vc_redist.x64.exe" target="_blank" className="bg-sky-100 dark:bg-transparent">Microsoft Visual C++ Redistributable for VS 2017</Link>
+                Requiere <Link href="https://aka.ms/vs/16/release/vc_redist.x64.exe" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Microsoft Visual C++ Redistributable for VS 2017</Link>
               </p>
               <p className="pb-5">
-                <Link href="http://www.sguiglia.com.ar/mnt/descargas/MNT_guia.pdf" target="_blank" className="bg-sky-100 dark:bg-transparent">Guía de Inicio Rápido</Link>
+                <Link href="http://www.sguiglia.com.ar/mnt/descargas/MNT_guia.pdf" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Guía de Inicio Rápido</Link>
               </p>
               <p className="pb-5">
-                <Link href="https://github.com/fsguiglia/Concatenate" target="_blank" className="bg-sky-100 dark:bg-transparent">Concatenate para Max for Live</Link>
+                <Link href="https://github.com/fsguiglia/Concatenate" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Concatenate para Max for Live</Link>
               </p>
               <p className="pb-5">
-                <Link href="https://github.com/fsguiglia/MNT2" target="_blank" className="bg-sky-100 dark:bg-transparent">Código fuente</Link>
+                <Link href="https://github.com/fsguiglia/MNT2" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Código fuente</Link>
               </p>
             </div>
         </div>
@@ -83,10 +83,10 @@ export default async function Home() {
             </div>
             <div className="md:text-2xl">
               <p className="pb-5">
-                <Link href="http://www.sguiglia.com.ar/mnt/descargas/MNT_guia.pdf" target="_blank" className="bg-sky-100 dark:bg-transparent">Guía de Inicio Rápido</Link>
+                <Link href="http://www.sguiglia.com.ar/mnt/descargas/MNT_guia.pdf" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Guía de Inicio Rápido</Link>
               </p>
               <p className="pb-5">
-                <Link href="https://www.youtube.com/playlist?list=PLEMVlXTcC5rn0nzcSsK7CfwKhJ1gFrZIB" target="_blank" className="bg-sky-100 dark:bg-transparent">Videos en youtube</Link>
+                <Link href="https://www.youtube.com/playlist?list=PLEMVlXTcC5rn0nzcSsK7CfwKhJ1gFrZIB" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Videos en youtube</Link>
               </p>
             </div>
         </div>
@@ -102,7 +102,7 @@ export default async function Home() {
                 MNT es un proyecto de Fabián Sguiglia.
               </p>
               <p>
-                <Link href="http://www.sguiglia.com.ar/mnt/descargas/MNT_guia.pdf" target="_blank" className="bg-sky-100 dark:bg-transparent">www.sguiglia.com.ar</Link>
+                <Link href="http://www.sguiglia.com.ar/mnt/descargas/MNT_guia.pdf" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">www.sguiglia.com.ar</Link>
               </p>
             </div>
         </div>
@@ -127,11 +127,11 @@ export default async function Home() {
               <p className="pb-5">
                   Sguiglia, F. (2023).
                   Síntesis concatenativa basada en corpus.
-                  En <Link href="https://wolkowiczeditores.mitiendanube.com/productos/investigaciones-sobre-audio-espacial-y-estetica-del-arte-sonoro-libro-digital-incluye-archivos-de-audio/" target="_blank" className="bg-sky-100 dark:bg-transparent">Investigaciones sobre audio espacial y estética del arte sonoro</Link>. 
+                  En <Link href="https://wolkowiczeditores.mitiendanube.com/productos/investigaciones-sobre-audio-espacial-y-estetica-del-arte-sonoro-libro-digital-incluye-archivos-de-audio/" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Investigaciones sobre audio espacial y estética del arte sonoro</Link>. 
               </p>
               <p>
                 Sguiglia, F., Coton, P. y Toth, F. (2019).
-                <Link href="https://www.nime.org/proceedings/2019/nime2019_paper029.pdf" target="_blank" className="bg-sky-100 dark:bg-transparent">
+                <Link href="https://www.nime.org/proceedings/2019/nime2019_paper029.pdf" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
                   El Mapa no es el Territorio: sensor mapping for audiovisual performances. 
                 </Link>
                 . En Proceedings of the international conference on New Interfaces for Musical Expression ({`NIME '19`}).

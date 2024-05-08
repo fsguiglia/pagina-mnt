@@ -1,27 +1,30 @@
 "use client";
-
-import React, {useEffect} from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 
-export function EmblaCarousel() {  
-    const [emblaRef, emblaApi] = useEmblaCarousel({loop: false});
-    
-    useEffect(() => {
-        if (emblaApi) {
-            console.log(emblaApi.slideNodes()) // Access API
-            }
-        }, [emblaApi]);
-
-    return (
-        <div className="embla" ref={emblaRef}>
-            <div className="embla__container">
-                <div className="embla__slide">
-                    <Image src="/1.png" alt="" width="100" height="100" />
-                </div>
-                <div className="embla__slide">Slide 2</div>
-                <div className="embla__slide">Slide 3</div>
+const Slider = () => {
+const slides = ["/1.png", "/2.png", "/3.png", "/4.png", "/5.png"]
+  return (
+    <div>
+      <Carousel
+        showArrows={true}
+        infiniteLoop={true}
+        dynamicHeight={false}
+        showStatus={false}
+        showIndicators={false}
+        autoPlay={true}
+      >
+        {slides.map((item) => (
+          <div>
+            <div>
+                <Image src={item} width="1366" height="738" alt="MNT" />
             </div>
-        </div>
-    );
+          </div>
+        ))}
+      </Carousel>
+    </div>
+  );
 }
+
+export default Slider;

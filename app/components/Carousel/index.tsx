@@ -4,11 +4,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
 
 const Slider = () => {
-const slides = [{id: '1', value: '/1.png'},
-                {id: '2', value: '/2.png'},
-                {id: '3', value: '/3.png'},
-                {id: '4', value: '/4.png'},
-                {id: '5', value: '/5.png'}];
+const slides = [{id: '1', value: 'https://di2546syqxmrb.cloudfront.net/1.png'},
+                {id: '2', value: 'https://di2546syqxmrb.cloudfront.net/2.png'},
+                {id: '3', value: 'https://di2546syqxmrb.cloudfront.net/3.png'},
+                {id: '4', value: 'https://di2546syqxmrb.cloudfront.net/4.png'},
+                {id: '5', value: 'https://di2546syqxmrb.cloudfront.net/5.png'}];
   return (
     <div>
       <Carousel

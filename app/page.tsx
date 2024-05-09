@@ -17,11 +17,10 @@ export default async function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:mr-8 mr-12 md:grid-cols-2 md:min-h-[calc(100vh-20px)] content-start scroll-mt-40 mb-10 md:snap-always md:snap-end" id="portada">
-          <div className="md:pl-5 md:order-2 pb-10">
-            <iframe 
-              className="w-full aspect-video"
-              src="https://player.vimeo.com/video/641119199?h=bcfbc3dbd3&background=1"  
-            />
+          <div className="w-full aspect-video md:pl-5 md:order-2 pb-10">
+            <video width="1280" height="720" autoPlay muted loop>
+              <source src="https://di2546syqxmrb.cloudfront.net/MNT2.mp4" />
+            </video>
           </div>
           <div className="md:pr-5 content-stretch">
             <div>

@@ -101,7 +101,7 @@ export default async function Home() {
                 MNT es un proyecto de Fabián Sguiglia.
               </p>
               <p>
-                <Link href="http://www.sguiglia.com.ar/mnt/descargas/MNT_guia.pdf" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">www.sguiglia.com.ar</Link>
+                <Link href="http://www.sguiglia.com.ar" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">www.sguiglia.com.ar</Link>
               </p>
             </div>
         </div>

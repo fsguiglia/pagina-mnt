@@ -106,43 +106,43 @@ export default async function Home() {
         </div>
         
         <div className="md:min-h-[calc(100vh-20px)] md:mr-8 mr-12 scroll-mt-40 mb-80 md:snap-always md:snap-end" id="publicaciones">
-        <div>
-        <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
-                Publicaciones
-              </h1>
-            </div>
-            <div>
-              <p className="pb-5">
-                  Sguiglia, F. (2024).
-                  MNT2. Una caja de herramientas para el diseño de instrumentos y entornos interactivos.
-                  En&nbsp;
-                  <Link href="https://en.cmmas.com/sonicideas" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
-                    Ideas Sónicas
-                  </Link>
-                  &nbsp;(en prensa).
-              </p>
-              <p className="pb-5">
-                  Sguiglia, F. (2024).
-                  Sistemas de interpolación gráfica aplicados al control de parámetros de síntesis.
-                  En Juego Primitivo. Escritos sobre arte, música y tecnología desde la praxis (en prensa). 
-              </p>
-              <p className="pb-5">
-                  Sguiglia, F. (2023).
-                  Síntesis concatenativa basada en corpus.
-                  En <Link href="https://wolkowiczeditores.mitiendanube.com/productos/investigaciones-sobre-audio-espacial-y-estetica-del-arte-sonoro-libro-digital-incluye-archivos-de-audio/" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Investigaciones sobre audio espacial y estética del arte sonoro</Link>. 
-              </p>
-              <p>
-                Sguiglia, F., Coton, P. y Toth, F. (2019).
-                <Link href="https://www.nime.org/proceedings/2019/nime2019_paper029.pdf" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
-                  El Mapa no es el Territorio: sensor mapping for audiovisual performances
+          <div>
+            <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
+              Publicaciones
+            </h1>
+          </div>
+          <div>
+            <p className="pb-5">
+                Sguiglia, F. (2024).
+                MNT2. Una caja de herramientas para el diseño de instrumentos y entornos interactivos.
+                En&nbsp;
+                <Link href="https://en.cmmas.com/sonicideas" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
+                  Ideas Sónicas
                 </Link>
-                . En&nbsp;
-                <Link href="https://www.nime.org/archives/" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
-                Proceedings of the international conference on New Interfaces for Musical Expression
-                </Link>
-                &nbsp;({`NIME '19`}).
-              </p>
-            </div>
+                &nbsp;(en prensa).
+            </p>
+            <p className="pb-5">
+                Sguiglia, F. (2024).
+                Sistemas de interpolación gráfica aplicados al control de parámetros de síntesis.
+                En Juego Primitivo. Escritos sobre arte, música y tecnología desde la praxis (en prensa). 
+            </p>
+            <p className="pb-5">
+                Sguiglia, F. (2023).
+                Síntesis concatenativa basada en corpus.
+                En <Link href="https://wolkowiczeditores.mitiendanube.com/productos/investigaciones-sobre-audio-espacial-y-estetica-del-arte-sonoro-libro-digital-incluye-archivos-de-audio/" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Investigaciones sobre audio espacial y estética del arte sonoro</Link>. 
+            </p>
+            <p>
+              Sguiglia, F., Coton, P. y Toth, F. (2019).
+              <Link href="https://www.nime.org/proceedings/2019/nime2019_paper029.pdf" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
+                El Mapa no es el Territorio: sensor mapping for audiovisual performances
+              </Link>
+              . En&nbsp;
+              <Link href="https://www.nime.org/archives/" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
+              Proceedings of the international conference on New Interfaces for Musical Expression
+              </Link>
+              &nbsp;({`NIME '19`}).
+            </p>
+          </div>
         </div>
       </div>
     </main>

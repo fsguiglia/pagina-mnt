@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { promises as fs } from 'fs';
 import Slider from "./components/Carousel";
+import Tutoriales from "./components/Tutoriales";
 
 export default async function Home() {
   const file = await fs.readFile(process.cwd() + '/app/data/data.json', 'utf8');
@@ -42,7 +43,7 @@ export default async function Home() {
           </div>
           <div className="md:pr-5 content-stretch">
             <div>
-              <p className="md:text-2xl md:text-left text-center">
+              <p className="md:text-2xl md:text-left text-center display-linebreak">
                 {data.portada.cuerpo}
               </p>
             </div>
@@ -74,36 +75,34 @@ export default async function Home() {
             </div>
         </div>
 
-        <div className="md:min-h-[calc(100vh-20px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:snap-always md:snap-end" id="tutoriales">
-        <div>
-              <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
-                Tutoriales
-              </h1>
-            </div>
-            <div className="md:text-2xl">
-              <p className="pb-5">
-                <Link href="http://www.sguiglia.com.ar/mnt/descargas/MNT_guia.pdf" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Guía de Inicio Rápido</Link>
-              </p>
-              <p className="pb-5">
-                <Link href="https://www.youtube.com/playlist?list=PLEMVlXTcC5rn0nzcSsK7CfwKhJ1gFrZIB" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Videos en youtube</Link>
-              </p>
-            </div>
+        <div className="grid grid-cols-1 md:mr-8 mr-12 md:grid-cols-2 md:min-h-[calc(100vh-20px)] content-start scroll-mt-40 mb-10 md:snap-always md:snap-end" id="tutoriales">
+          <div>
+            <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
+              Tutoriales
+            </h1>
+            <p className="pb-5 md:text-2xl">
+              <Link href="https://youtube.com/playlist?list=PLEMVlXTcC5rn0nzcSsK7CfwKhJ1gFrZIB&si=QrlbriWbq-XBzJvM" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">Ver en YouTube</Link>
+            </p>
+          </div>
+          <div className="w-full aspect-video md:pl-5 pb-10 hidden md:block">
+            <Tutoriales />
+          </div>
         </div>
 
         <div className="md:min-h-[calc(100vh-20px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:snap-always md:snap-end" id="contacto">
-        <div>
-              <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
-                Contacto
-              </h1>
-            </div>
-            <div className="md:text-2xl">
-              <p className="pb-5">
-                MNT es un proyecto de Fabián Sguiglia.
-              </p>
-              <p>
-                <Link href="http://www.sguiglia.com.ar" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">www.sguiglia.com.ar</Link>
-              </p>
-            </div>
+         <div>
+            <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
+              Contacto
+            </h1>
+          </div>
+          <div className="md:text-2xl">
+            <p className="pb-5">
+              MNT es un proyecto de Fabián Sguiglia.
+            </p>
+            <p>
+              <Link href="http://www.sguiglia.com.ar" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">www.sguiglia.com.ar</Link>
+            </p>
+          </div>
         </div>
         
         <div className="md:min-h-[calc(100vh-20px)] md:mr-8 mr-12 scroll-mt-40 mb-80 md:snap-always md:snap-end" id="publicaciones">
@@ -116,11 +115,15 @@ export default async function Home() {
               <p className="pb-5">
                   Sguiglia, F. (2024).
                   MNT2. Una caja de herramientas para el diseño de instrumentos y entornos interactivos.
-                  En Ideas Sónicas (en prensa). 
+                  En&nbsp;
+                  <Link href="https://en.cmmas.com/sonicideas" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
+                    Ideas Sónicas
+                  </Link>
+                  &nbsp;(en prensa).
               </p>
               <p className="pb-5">
                   Sguiglia, F. (2024).
-                  Sistemas de interpolación gráfica aplicados al control de parámetros de síntesis
+                  Sistemas de interpolación gráfica aplicados al control de parámetros de síntesis.
                   En Juego Primitivo. Escritos sobre arte, música y tecnología desde la praxis (en prensa). 
               </p>
               <p className="pb-5">
@@ -131,9 +134,13 @@ export default async function Home() {
               <p>
                 Sguiglia, F., Coton, P. y Toth, F. (2019).
                 <Link href="https://www.nime.org/proceedings/2019/nime2019_paper029.pdf" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
-                  El Mapa no es el Territorio: sensor mapping for audiovisual performances. 
+                  El Mapa no es el Territorio: sensor mapping for audiovisual performances
                 </Link>
-                . En Proceedings of the international conference on New Interfaces for Musical Expression ({`NIME '19`}).
+                . En&nbsp;
+                <Link href="https://www.nime.org/archives/" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">
+                Proceedings of the international conference on New Interfaces for Musical Expression
+                </Link>
+                &nbsp;({`NIME '19`}).
               </p>
             </div>
         </div>

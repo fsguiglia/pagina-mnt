@@ -85,24 +85,8 @@ export default async function Home() {
           <Tutoriales />
         </div>
       </div>
-
-      <div className="md:min-h-[calc(100vh-100px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="contacto">
-        <div>
-          <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
-            Contacto
-          </h1>
-        </div>
-        <div className="md:text-2xl">
-          <p className="pb-5">
-            MNT es un proyecto de Fabián Sguiglia.
-          </p>
-          <p>
-            <Link href="http://www.sguiglia.com.ar" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">www.sguiglia.com.ar</Link>
-          </p>
-        </div>
-      </div>
       
-      <div className="md:min-h-[calc(100vh-120px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="publicaciones">
+      <div className="md:min-h-[calc(100vh-100px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="publicaciones">
         <div>
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
             Publicaciones
@@ -138,6 +122,22 @@ export default async function Home() {
             Proceedings of the international conference on New Interfaces for Musical Expression
             </Link>
             &nbsp;({`NIME '19`}).
+          </p>
+        </div>
+      </div>
+
+      <div className="md:min-h-[calc(100vh-140px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="contacto">
+        <div>
+          <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
+            Contacto
+          </h1>
+        </div>
+        <div className="md:text-2xl">
+          <p className="pb-5">
+            MNT es un proyecto de Fabián Sguiglia.
+          </p>
+          <p>
+            <Link href="http://www.sguiglia.com.ar" target="_blank" className="bg-sky-100 dark:bg-white dark:text-black">www.sguiglia.com.ar</Link>
           </p>
         </div>
       </div>

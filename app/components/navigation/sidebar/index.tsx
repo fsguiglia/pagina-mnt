@@ -43,13 +43,13 @@ const Sidebar = ({
                 </Link>
               </li>
               <li>
-                <Link href="#contacto" onClick={toggle}>
-                <p className="mb-3 bg-sky-100 px-3">Contacto</p>
+                <Link href="#publicaciones" onClick={toggle}>
+                  <p className="mb-3 bg-sky-100 px-3">Publicaciones</p>
                 </Link>
               </li>
               <li>
-                <Link href="#publicaciones" onClick={toggle}>
-                  <p className="mb-3 bg-sky-100 px-3">Publicaciones</p>
+                <Link href="#contacto" onClick={toggle}>
+                <p className="mb-3 bg-sky-100 px-3">Contacto</p>
                 </Link>
               </li>
         </ul>

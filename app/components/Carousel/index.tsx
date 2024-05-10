@@ -2,10 +2,16 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect } from "react";
 
 const Slider = () => {
-  const width = useState(window.innerWidth)[0];
+  let width = undefined;
+    useEffect(()=>{
+        width = window.innerWidth;
+    });
+  if(typeof width == 'undefined')
+      width = 1399
+
   var slides = [{id: '1', value: 'https://di2546syqxmrb.cloudfront.net/image/720/1.png'},
                 {id: '2', value: 'https://di2546syqxmrb.cloudfront.net/image/720/2.png'},
                 {id: '3', value: 'https://di2546syqxmrb.cloudfront.net/image/720/3.png'},

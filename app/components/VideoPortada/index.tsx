@@ -1,8 +1,14 @@
 "use client";
-import { useState } from "react";
+import { useEffect } from "react";
 
 const VideoPortada = () => {
-    const width = window.innerWidth;
+    let width = undefined;
+    useEffect(()=>{
+        width = window.innerWidth;
+    });
+    if(typeof width == 'undefined')
+        width = 1399
+    
     return width ? (
             <video autoPlay muted loop>
                 <source src={

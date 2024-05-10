@@ -4,7 +4,7 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 255, 255, 255;
+  --background-start-rgb: 236, 241, 255;
   --background-end-rgb: 186, 191, 217;
 }
 
@@ -24,7 +24,6 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-    overflow: hidden;
 }
 
 @layer utilities {
@@ -32,17 +31,13 @@ body {
     text-wrap: balance;
   }
 
-   /* Chrome, Safari and Opera */
-   .no-scrollbar::-webkit-scrollbar {
-    display: none;
-  }
-
-  .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
-  }
-
   .display-linebreak {
     white-space: pre-line;
   }
+}
+
+.sidebar-container {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 236, 241, 255;
+  --background-end-rgb: 186, 191, 217;
 }

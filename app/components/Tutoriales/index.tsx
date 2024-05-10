@@ -21,7 +21,7 @@ const slides = [{id: '1', value: 'https://www.youtube.com/embed/RG2L3Brwtmg?disa
         autoPlay={false}
       >
         {slides.map((item) => (
-            <div key={item.id}>
+            <div key={item.id} className="-z-1">
                 <div key={item.id}>
                     <p className="text-sm text-left ml-10" key={item.id}>{item.id} de {slides.length} - {item.title}</p>
                 </div>

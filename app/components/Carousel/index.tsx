@@ -2,13 +2,33 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
+import { useState } from "react";
 
 const Slider = () => {
-const slides = [{id: '1', value: 'https://di2546syqxmrb.cloudfront.net/1.png'},
-                {id: '2', value: 'https://di2546syqxmrb.cloudfront.net/2.png'},
-                {id: '3', value: 'https://di2546syqxmrb.cloudfront.net/3.png'},
-                {id: '4', value: 'https://di2546syqxmrb.cloudfront.net/4.png'},
-                {id: '5', value: 'https://di2546syqxmrb.cloudfront.net/5.png'}];
+  const width = useState(window.innerWidth)[0];
+  var slides = [{id: '1', value: 'https://di2546syqxmrb.cloudfront.net/image/720/1.png'},
+                {id: '2', value: 'https://di2546syqxmrb.cloudfront.net/image/720/2.png'},
+                {id: '3', value: 'https://di2546syqxmrb.cloudfront.net/image/720/3.png'},
+                {id: '4', value: 'https://di2546syqxmrb.cloudfront.net/image/720/4.png'},
+                {id: '5', value: 'https://di2546syqxmrb.cloudfront.net/image/720/5.png'}];
+  if(width < 1440)
+  {
+    slides = [{id: '1', value: 'https://di2546syqxmrb.cloudfront.net/image/360/1.png'},
+              {id: '2', value: 'https://di2546syqxmrb.cloudfront.net/image/360/2.png'},
+              {id: '3', value: 'https://di2546syqxmrb.cloudfront.net/image/360/3.png'},
+              {id: '4', value: 'https://di2546syqxmrb.cloudfront.net/image/360/4.png'},
+              {id: '5', value: 'https://di2546syqxmrb.cloudfront.net/image/360/5.png'}];
+    if(width <= 720)
+    {
+      slides = [{id: '1', value: 'https://di2546syqxmrb.cloudfront.net/image/180/1.png'},
+                {id: '2', value: 'https://di2546syqxmrb.cloudfront.net/image/180/2.png'},
+                {id: '3', value: 'https://di2546syqxmrb.cloudfront.net/image/180/3.png'},
+                {id: '4', value: 'https://di2546syqxmrb.cloudfront.net/image/180/4.png'},
+                {id: '5', value: 'https://di2546syqxmrb.cloudfront.net/image/180/5.png'}];
+    }
+  }
+
+
   return (
     <div>
       <Carousel

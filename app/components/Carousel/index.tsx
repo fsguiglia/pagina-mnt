@@ -18,6 +18,7 @@ const slides = [{id: '1', value: 'https://di2546syqxmrb.cloudfront.net/1.png'},
         showStatus={false}
         showIndicators={false}
         autoPlay={true}
+        showThumbs={false}
       >
         {slides.map((item) => (
             <div key={item.id}>

@@ -26,7 +26,7 @@ const slides = [{id: '1', value: 'https://www.youtube.com/embed/RG2L3Brwtmg?disa
                     <p className="text-sm text-left ml-10" key={item.id}>{item.id} de {slides.length} - {item.title}</p>
                 </div>
                 <div className="aspect-video videoWrapper">
-                    <iframe key={item.id} width="560" height="315" src={item.value} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"></iframe>
+                    <iframe key={item.id} width="560" height="315" src={item.value} title="YouTube video player" allowFullScreen referrerPolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
             </div>
         ))}

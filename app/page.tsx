@@ -2,6 +2,7 @@ import Link from "next/link";
 import { promises as fs } from 'fs';
 import Slider from "./components/Carousel";
 import Tutoriales from "./components/Tutoriales";
+import VideoPortada from "./components/VideoPortada";
 
 export default async function Home() {
   const file = await fs.readFile(process.cwd() + '/app/data/data.json', 'utf8');
@@ -19,9 +20,7 @@ export default async function Home() {
 
         <div className="grid grid-cols-1 md:mr-8 mr-12 md:grid-cols-2 md:min-h-[calc(100vh-20px)] content-start scroll-mt-40 mb-10 md:snap-always md:snap-end" id="portada">
           <div className="w-full aspect-video md:pl-5 md:order-2 pb-10">
-            <video width="1280" height="720" autoPlay muted loop>
-              <source src="https://di2546syqxmrb.cloudfront.net/MNT2.mp4" />
-            </video>
+            <VideoPortada />
           </div>
           <div className="md:pr-5 content-stretch">
             <div>

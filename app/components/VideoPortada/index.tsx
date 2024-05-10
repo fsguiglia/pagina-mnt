@@ -2,8 +2,7 @@
 import { useState } from "react";
 
 const VideoPortada = () => {
-    const width = useState(window.innerWidth)[0];
-
+    const width = window.innerWidth;
     return width ? (
             <video autoPlay muted loop>
                 <source src={

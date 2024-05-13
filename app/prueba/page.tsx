@@ -1,8 +1,13 @@
 "use client";
 import { useState, useEffect } from "react";
 
+interface Data {
+  userId: number
+  title: string
+}
+
 export default function Page() {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<Data>();
   const [isLoading, setLoading] = useState(true);
   
   useEffect(() => {
@@ -15,7 +20,7 @@ export default function Page() {
   });
 
   return data != null ?  (
-    <div className="md:pr-5 content-stretch min-h-screesn p-12">
+    <div className="md:pr-5 content-stretch min-h-screen p-12">
         <div>
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
             userID: {data.userId}
@@ -29,8 +34,10 @@ export default function Page() {
       </div>
     ) : 
     (
-      <div>
-        Data is null
+      <div className="md:pr-5 content-stretch min-h-screen p-12">
+        <p className="md:text-2xl text-2xl">
+          loading...
+        </p>
       </div>
     )
 }

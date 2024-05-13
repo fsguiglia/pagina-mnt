@@ -3,7 +3,11 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const Logo = (props) => {
+interface Props {
+  path: string
+}
+
+const Logo = (props : Props) => {
   //update the size of the logo when the size of the screen changes
   const [width, setWidth] = useState(0);
 
@@ -23,9 +27,10 @@ const Logo = (props) => {
         <Image
           src="/mnt.svg"
           alt="Logo"
-          width={width < 1024 ? "50" : "50"}
-          height={width < 1024 ? "45" : "74"}
-          className="relative"
+          width="0"
+          height="0"
+          priority={true}
+          className={"relative w-[50px] h-auto"}
         />
       </Link>
     </>

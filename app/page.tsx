@@ -5,14 +5,11 @@ import Tutoriales from "./components/Tutoriales";
 import VideoPortada from "./components/VideoPortada";
 
 export default async function Home() {
-  const file = await fs.readFile(process.cwd() + '/app/data/data.json', 'utf8');
-  const data = JSON.parse(file);
-
   return (
     <main className="pl-12 pt-20">
       <div className="md:hidden pr-8 mb-10">
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
-          {data.portada.titulo1}
+          El mapa no es el territorio
         </h1>
       </div>
 
@@ -23,12 +20,12 @@ export default async function Home() {
         <div className="md:pr-5 content-stretch">
           <div>
             <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4 hidden md:block">
-              {data.portada.titulo1}
+              El mapa no es el territorio
             </h1>
           </div>
           <div>
             <p className="md:text-2xl md:text-left text-center">
-              {data.portada.bajada}
+              MNT es una aplicación de código abierto. Ofrece herramientas para controlar sonidos e imágenes a través de movimientos. Genera mapas interactivos que pueden conectarse con otras aplicaciones o sintetizadores de hardware.
             </p>
           </div>
         </div>
@@ -40,8 +37,11 @@ export default async function Home() {
         </div>
         <div className="md:pr-5 content-stretch">
           <div>
-            <p className="md:text-2xl md:text-left text-center display-linebreak">
-              {data.portada.cuerpo}
+            <p className="md:text-2xl md:text-left text-center mb-8">
+              MNT construye sets conectando módulos. Recibe mensajes de controladores, celulares, joysticks o sensores. Soporta MIDI y OSC, conectándose fácilmente con DAWs o software para VJs.
+            </p>
+            <p className="md:text-2xl md:text-left text-center">
+              Articula seis estrategias distintas para generar mapas, implementando tecnologías como interpolación gráfica e inteligencia artificial.
             </p>
           </div>
         </div>

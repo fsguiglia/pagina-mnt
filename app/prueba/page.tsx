@@ -1,21 +1,36 @@
-import { promises as fs } from 'fs';
+"use client";
+import { useState, useEffect } from "react";
 
-export default async function Page() {
-  const file = await fs.readFile(process.cwd() + '/app/data/data.json', 'utf8');
-  const data = JSON.parse(file);
+export default function Page() {
+  const [data, setData] = useState(null);
+  const [isLoading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/posts/1")
+    .then((res) => res.json())
+    .then((data) => {
+      setData(data);
+      setLoading(false);
+    })
+  });
 
-  return (
-    <div className="md:pr-5 content-stretch min-h-screen p-12">
+  return data != null ?  (
+    <div className="md:pr-5 content-stretch min-h-screesn p-12">
         <div>
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white pb-4">
-            {data.prueba.titulo1}
+            userID: {data.userId}
           </h1>
         </div>
         <div>
           <p className="md:text-2xl text-2xl">
-            {data.prueba.bajada}
+            <strong>Title:</strong> {data.title}
           </p>
         </div>
       </div>
-    );
+    ) : 
+    (
+      <div>
+        Data is null
+      </div>
+    )
 }

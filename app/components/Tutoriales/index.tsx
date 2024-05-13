@@ -19,6 +19,7 @@ const slides = [{id: '1', value: 'https://www.youtube.com/embed/RG2L3Brwtmg?disa
         showStatus={false}
         showIndicators={false}
         autoPlay={false}
+        showThumbs={false}
       >
         {slides.map((item) => (
             <div key={item.id} className="-z-1">

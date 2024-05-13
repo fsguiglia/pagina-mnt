@@ -13,10 +13,10 @@ const VideoPortada = () => {
             <video autoPlay muted loop>
                 <source src={
                     width >= 1400 ?
-                    "https://di2546syqxmrb.cloudfront.net/MNT2-720.mp4"
+                    "https://d1at6djbu3ggt6.cloudfront.net/video/MNT2.mp4"
                     : width > 720 ?
-                    "https://di2546syqxmrb.cloudfront.net/MNT2-360.mp4"
-                    : "https://di2546syqxmrb.cloudfront.net/MNT2-180.mp4"
+                    "https://d1at6djbu3ggt6.cloudfront.net/video/MNT2-360.mp4"
+                    : "https://d1at6djbu3ggt6.cloudfront.net/video/MNT2-180.mp4"
                  } />
             </video>
     ) : (

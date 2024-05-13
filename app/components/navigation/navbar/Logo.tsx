@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-const Logo = () => {
+const Logo = (props) => {
   //update the size of the logo when the size of the screen changes
   const [width, setWidth] = useState(0);
 
@@ -19,7 +19,7 @@ const Logo = () => {
 
   return (
     <>
-      <Link href="#portada" style={{display: "block"}}>
+      <Link href={props.path == "/" ? "#portada" : "/"} style={{display: "block"}}>
         <Image
           src="/mnt.svg"
           alt="Logo"

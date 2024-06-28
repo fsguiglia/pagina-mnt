@@ -9,7 +9,7 @@ export default async function Home() {
     <main className="pl-12 pt-20">
       <div className="md:hidden pr-8 mb-10">
         <h1 className="mb-4 2xl:mb-8 font-extrabold leading-none tracking-tight text-gray-900 text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl text-center">
-          El mapa no es el territorios
+          El mapa no es el territorio
         </h1>
       </div>
 

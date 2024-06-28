@@ -12,25 +12,25 @@ const Slider = () => {
   if(typeof width == 'undefined')
       width = 1399
 
-  var slides = [{id: '1', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/720/1.png'},
-                {id: '2', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/720/2.png'},
-                {id: '3', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/720/3.png'},
-                {id: '4', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/720/4.png'},
-                {id: '5', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/720/5.png'}];
+  var slides = [{id: '1', value: 'https://mnt.com.ar/image/720/1.png'},
+                {id: '2', value: 'https://mnt.com.ar/image/720/2.png'},
+                {id: '3', value: 'https://mnt.com.ar/image/720/3.png'},
+                {id: '4', value: 'https://mnt.com.ar/image/720/4.png'},
+                {id: '5', value: 'https://mnt.com.ar/image/720/5.png'}];
   if(width < 1440)
   {
-    slides = [{id: '1', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/360/1.png'},
-              {id: '2', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/360/2.png'},
-              {id: '3', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/360/3.png'},
-              {id: '4', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/360/4.png'},
-              {id: '5', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/360/5.png'}];
+    slides = [{id: '1', value: 'https://mnt.com.ar/image/360/1.png'},
+              {id: '2', value: 'https://mnt.com.ar/image/360/2.png'},
+              {id: '3', value: 'https://mnt.com.ar/image/360/3.png'},
+              {id: '4', value: 'https://mnt.com.ar/image/360/4.png'},
+              {id: '5', value: 'https://mnt.com.ar/image/360/5.png'}];
     if(width <= 720)
     {
-      slides = [{id: '1', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/180/1.png'},
-                {id: '2', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/180/2.png'},
-                {id: '3', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/180/3.png'},
-                {id: '4', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/180/4.png'},
-                {id: '5', value: 'https://d1at6djbu3ggt6.cloudfront.net/image/180/5.png'}];
+      slides = [{id: '1', value: 'https://mnt.com.ar/image/180/1.png'},
+                {id: '2', value: 'https://mnt.com.ar/image/180/2.png'},
+                {id: '3', value: 'https://mnt.com.ar/image/180/3.png'},
+                {id: '4', value: 'https://mnt.com.ar/image/180/4.png'},
+                {id: '5', value: 'https://mnt.com.ar/image/180/5.png'}];
     }
   }
 

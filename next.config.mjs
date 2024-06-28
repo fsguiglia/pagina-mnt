@@ -4,7 +4,7 @@ const nextConfig = {
         remotePatterns: [
           {
             protocol: 'https',
-            hostname: 'd1at6djbu3ggt6.cloudfront.net',
+            hostname: 'media.mnt.com.ar',
             port: '',
             pathname: '/**',
           },

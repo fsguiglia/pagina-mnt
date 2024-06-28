@@ -30,7 +30,7 @@ const Logo = (props : Props) => {
           width="0"
           height="0"
           priority={true}
-          className={"relative w-[50px] h-auto"}
+          className={"relative w-[50px] h-auto float-left"}
         />
       </Link>
     </>

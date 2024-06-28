@@ -10,7 +10,7 @@ const VideoPortada = () => {
         width = 1399
     
     return width ? (
-            <video autoPlay muted loop>
+            <video autoPlay muted loop className="md:float-right">
                 <source src={
                     width >= 1400 ?
                     "https://media.mnt.com.ar/video/MNT2.mp4"

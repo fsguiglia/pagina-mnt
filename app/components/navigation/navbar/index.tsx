@@ -1,13 +1,15 @@
 import React from "react";
 import { usePathname } from "next/navigation";
+import { useScrollDirection } from "./scroll";
 import Link from "next/link";
 import Logo from "./Logo";
 
 const Navbar = ({ toggle }: { toggle: () => void }) => {
   const pathname = usePathname();
+  const scrollDirection = useScrollDirection();
   
   return (
-    <div className="w-full h-20 2xl:h-28 bg-white sticky top-0 z-10 block">
+    <div className={`w-full h-20 2xl:h-28 bg-white sticky top-0 z-10 block ${ scrollDirection === "hide" ? "-top-20 opacity-0" : "top-0 opacity-100"} transition-all duration-500`}>
       <div className="px-12 h-full">
         <div className="flex items-center w-full h-full columns-2">
           <div className="w-full">

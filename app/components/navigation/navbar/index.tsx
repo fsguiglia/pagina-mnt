@@ -9,7 +9,7 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
   const scrollDirection = useScrollDirection();
   
   return (
-    <div className={`w-full h-20 2xl:h-28 bg-white sticky top-0 z-10 block ${ scrollDirection === "hide" ? "-top-20" : "top-0"} transition-all duration-500`}>
+    <div className={`w-full h-20 2xl:h-28 bg-white sticky z-10 block ${ scrollDirection === "hide" ? "-top-20" : "top-0"} transition-all duration-500`}>
       <div className="px-12 h-full">
         <div className="flex items-center w-full h-full columns-2">
           <div className="w-full">

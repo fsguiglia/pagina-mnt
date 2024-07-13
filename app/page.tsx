@@ -55,13 +55,13 @@ export default async function Home() {
           </div>
           <div className="md:text-2xl 2xl:text-4xl">
             <p className="pb-5">
-              <Link href="https://d17ccq4m3xjsbi.cloudfront.net/mnt/MNT2.zip" className="bg-sky-100">
+              <Link href="https://downloads.mnt.com.ar/MNT2.zip" className="bg-sky-100">
                 Ejecutable (Windows x64)
               </Link>. 
               Requiere <Link href="https://aka.ms/vs/16/release/vc_redist.x64.exe" target="_blank" className="bg-sky-100">Microsoft Visual C++ Redistributable for VS 2017</Link>
             </p>
             <p className="pb-5">
-              <Link href="http://www.sguiglia.com.ar/mnt/descargas/MNT_guia.pdf" target="_blank" className="bg-sky-100">Guía de Inicio Rápido</Link>
+              <Link href="https://downloads.mnt.com.ar/Guia_MNT.pdf" target="_blank" className="bg-sky-100">Guía de Inicio Rápido</Link>
             </p>
             <p className="pb-5">
               <Link href="https://github.com/fsguiglia/Concatenate" target="_blank" className="bg-sky-100">Concatenate para Max for Live</Link>

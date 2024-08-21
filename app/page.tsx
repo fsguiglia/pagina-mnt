@@ -98,11 +98,10 @@ export default async function Home() {
                 Sguiglia, F. (2024).
                 MNT2. Una caja de herramientas para el diseño de instrumentos y entornos interactivos.
               </Link>
-              En&nbsp;
+              &nbsp;En&nbsp;
               <Link href="https://en.cmmas.com/sonicideas" target="_blank" className="bg-sky-100">
                 Ideas Sónicas
-              </Link>
-              &nbsp;(en prensa).
+              </Link>.
           </p>
           <p className="pb-5 2xl:pb-10">
               Sguiglia, F. (2024).

@@ -127,6 +127,22 @@ export default async function Home() {
         </div>
       </div>
 
+      <div className="md:min-h-[calc(100vh-100px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="patrocinadores">
+      <div>
+          <h1 className="mb-4 2xl:mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl pb-4">
+            Patrocinadores
+          </h1>
+        </div>
+        <div className="md:text-2xl 2xl:text-4xl">
+          <p>
+            El proyecto MNT comenzó en la residencia <Link href="https://chela.org.ar/modulo/lic/" target="_blank" className="bg-sky-100">LIC</Link> de <Link href="https://chela.org.ar/" target="_blank" className="bg-sky-100">cheLA</Link> (2018).
+            La primera versión de MNT se completó con el apoyo de un subsidio SAI 2018 de la Secretaría de Investigación de la <Link href="https://unq.edu.ar/" target="_blank" className="bg-sky-100">Universidad Nacional de Quilmes</Link>.
+            MNT2, la segunda iteración del proyecto, obtuvo en 2021 el primer premio en la categoría Tecnología Aplicada al Arte y la Cultura del concurso de arte y tecnología <Link href="https://fusion2020.frba.utn.edu.ar/" target="_blank" className="bg-sky-100">Fusion 2020</Link> (
+            <Link href="http://bienalkosice.com/" target="_blank" className="bg-sky-100">Bienal Kosice</Link> + <Link href="https://fusion2020.frba.utn.edu.ar/arcitec-arte-ciencia-y-tecnologia/" target="_blank" className="bg-sky-100">ARCITEC</Link>).
+          </p>
+        </div>
+      </div>
+
       <div className="md:min-h-[calc(100vh-140px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="contacto">
         <div>
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl pb-4">

@@ -33,6 +33,11 @@ const Navbar = ({ toggle }: { toggle: () => void }) => {
                 </Link>
               </li>
               <li>
+                <Link href="#patrocinadores">
+                  <p>Patrocinadores</p>
+                </Link>
+              </li>
+              <li>
                 <Link href="#contacto">
                   <p>Contacto</p>
                 </Link>

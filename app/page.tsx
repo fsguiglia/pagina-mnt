@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { promises as fs } from 'fs';
 import Slider from "./components/Carousel";
 import Tutoriales from "./components/Tutoriales";
 import VideoPortada from "./components/VideoPortada";
@@ -72,8 +71,8 @@ export default async function Home() {
           </div>
       </div>
 
-      <div className="grid grid-cols-1 md:mr-8 mr-12 md:grid-cols-2 md:min-h-[calc(100vh-100px)] content-start scroll-mt-40 mb-20 md:mb-0" id="tutoriales">
-        <div>
+      <div className="flex flex-col md:flex-row md:mr-8 mr-12 md:grid-cols-3 md:min-h-[calc(100vh-100px)] content-start scroll-mt-40 mb-20 md:mb-0" id="tutoriales">
+        <div className="md:w-1/3">
           <h1 className="mb-4 2xl:mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl pb-4">
             Tutoriales
           </h1>
@@ -81,7 +80,7 @@ export default async function Home() {
             <Link href="https://youtube.com/playlist?list=PLEMVlXTcC5rn0nzcSsK7CfwKhJ1gFrZIB&si=QrlbriWbq-XBzJvM" target="_blank" className="bg-sky-100">Ver en YouTube</Link>
           </p>
         </div>
-        <div className="w-full aspect-video md:pl-5 pb-10 hidden md:block">
+        <div className="md:w-2/3 w-full h-auto md:pl-5 pb-10 hidden md:block">
           <Tutoriales />
         </div>
       </div>

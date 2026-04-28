@@ -116,7 +116,7 @@ export default async function Home() {
           <p className="pb-5 2xl:pb-10">
               Sguiglia, F. (2026).
               MNT2: A Longitudinal Evaluation of an Open-Source Mapping Software.
-              En <Link href="https://revistas.ufg.br/musica" target="_blank" className="bg-sky-100">Musica Hodie </Link> (en prensa).
+              En <Link href="https://revistas.ufg.br/musica" target="_blank" className="bg-sky-100">Musica Hodie</Link> (en prensa).
           </p>
           <p className="pb-5 2xl:pb-10">
               <Link href="https://www.cmmas.com/en/copy-5-of-ideassonicas25/ideassonicas%2Fsonicideas-23" target="_blank" className="bg-sky-100">

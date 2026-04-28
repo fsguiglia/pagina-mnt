@@ -5,54 +5,54 @@ import VideoPortada from "./components/VideoPortada";
 
 export default async function Home() {
   return (
-    <main className="pl-12 pt-20">
+    <main className="pl-12 lg:pl-16 xl:pl-20 pt-20">
       <div className="md:hidden pr-8 mb-10">
         <h1 className="mb-4 2xl:mb-8 font-extrabold leading-none tracking-tight text-gray-900 text-4xl md:text-5xl lg:text-6xl 2xl:text-8xl text-center">
-          El mapa no es el territorio
+          El Mapa no es el Territorio
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:mr-8 mr-12 md:grid-cols-2 md:min-h-[calc(100vh-100px)] content-start scroll-mt-40 mb-20 md:mb-0" id="portada">
+      <div className="grid grid-cols-1 md:mr-8 lg:mr-12 xl:mr-20 mr-12 md:grid-cols-2 md:min-h-[calc(100vh-100px)] content-start scroll-mt-40 mb-20 md:mb-0" id="portada">
         <div className="w-full aspect-video md:pl-5 md:order-2 pb-10">
           <VideoPortada />
         </div>
         <div className="md:pr-5 content-stretch">
           <div>
-            <h1 className="mb-4 2xl:mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl 2xl:text-8xl pb-4 hidden md:block">
-              El mapa no es el territorio
+            <h1 className="mb-4 2xl:mb-8 font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl 2xl:text-8xl pb-4 hidden md:block">
+              El Mapa no es el Territorio
             </h1>
           </div>
           <div>
-            <p className="md:text-2xl 2xl:text-4xl md:text-left text-center">
-              MNT es una aplicación de código abierto. Ofrece herramientas para controlar sonidos e imágenes a través de movimientos. Genera mapas interactivos que pueden conectarse con otras aplicaciones o sintetizadores de hardware.
+            <p className="md:text-2xl lg:text-2xl 2xl:text-4xl md:text-left text-center">
+              MNT es una herramienta para crear mapas interactivos en instrumentos digitales y entornos audiovisuales. Permite construir interfaces bidimensionales que relacionan movimiento, sonido e imagen.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:mr-8 mr-12 md:grid-cols-2 md:min-h-[calc(100vh-100px)] mb-20 md:mb-0">
+      <div className="grid grid-cols-1 md:mr-8 lg:mr-12 xl:mr-20 mr-12 md:grid-cols-2 md:min-h-[calc(100vh-100px)] mb-20 md:mb-0">
         <div className="md:pr-20 -z-10 mb-20 md:mb-0">
           <Slider />  
         </div>
         <div className="md:pr-5 content-stretch">
           <div>
-            <p className="md:text-2xl 2xl:text-4xl md:text-left text-center mb-8">
-              MNT construye sets conectando módulos. Recibe mensajes de controladores, celulares, joysticks o sensores. Soporta MIDI y OSC, conectándose fácilmente con DAWs o software para VJs.
+            <p className="md:text-2xl lg:text-2xl 2xl:text-4xl md:text-left text-center mb-8">
+              Incluye seis módulos que se pueden combinar entre sí. Recibe datos de controladores MIDI, sensores, celulares o joysticks, y se comunica con otras aplicaciones a través de MIDI y OSC.
             </p>
-            <p className="md:text-2xl 2xl:text-4xl md:text-left text-center">
-              Articula seis estrategias distintas para generar mapas, implementando tecnologías como interpolación gráfica e inteligencia artificial.
+            <p className="md:text-2xl lg:text-2xl 2xl:text-4xl md:text-left text-center">
+              Integra distintas técnicas -como interpolación, eventos condicionales, reducción dimensional y síntesis basada en corpus- en una interfaz pensada para experimentar y explorar sin escribir código.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="md:min-h-[calc(100vh-100px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="descargas">
+      <div className="md:min-h-[calc(100vh-100px)] md:mr-8 lg:mr-12 xl:mr-20 mr-12 scroll-mt-40 mb-20 md:mb-0" id="descargas">
       <div>
             <h1 className="mb-4 2xl:mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
               Descargas
             </h1>
           </div>
-          <div className="md:text-2xl 2xl:text-4xl">
+          <div className="md:text-2xl lg:text-2xl 2xl:text-4xl">
             <p className="pb-5">
               <Link href="https://downloads.mnt.com.ar/MNT2.zip" className="bg-sky-100">
                 Ejecutable (Windows x64)
@@ -71,7 +71,7 @@ export default async function Home() {
           </div>
       </div>
 
-      <div className="flex flex-col md:flex-row md:mr-8 mr-12 md:grid-cols-3 md:min-h-[calc(100vh-100px)] content-start scroll-mt-40 mb-20 md:mb-0" id="tutoriales">
+      <div className="flex flex-col md:flex-row md:mr-8 lg:mr-12 xl:mr-20 mr-12 md:grid-cols-3 md:min-h-[calc(100vh-100px)] content-start scroll-mt-40 mb-20 md:mb-0" id="tutoriales">
         <div className="md:w-1/3">
           <h1 className="mb-4 2xl:mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl pb-4">
             Tutoriales
@@ -84,7 +84,27 @@ export default async function Home() {
           <Tutoriales />
         </div>
       </div>
-      
+      <div className="md:min-h-[calc(100vh-100px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="patrocinadores">
+      <div>
+          <h1 className="mb-4 2xl:mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl pb-4">
+            Patrocinadores
+          </h1>
+        </div>
+        <div className="md:text-2xl 2xl:text-4xl">
+          <ul>
+            <li className="pb-5 2xl:pb-10">
+              <strong>2021.</strong> Primer premio en la categoría Tecnología Aplicada al Arte y la Cultura del concurso de arte y tecnología <Link href="https://fusion2020.frba.utn.edu.ar/" target="_blank" className="bg-sky-100">Fusión 2020</Link> (
+            <Link href="http://bienalkosice.com/" target="_blank" className="bg-sky-100">Bienal Kosice</Link> + <Link href="https://fusion2020.frba.utn.edu.ar/arcitec-arte-ciencia-y-tecnologia/" target="_blank" className="bg-sky-100">ARCITEC</Link>).  
+            </li>
+            <li className="pb-5 2xl:pb-10">
+              <strong>2018.</strong> Subsidio SAI de la Secretaría de Investigación de la <Link href="https://unq.edu.ar/" target="_blank" className="bg-sky-100">Universidad Nacional de Quilmes</Link>.
+            </li>
+            <li>
+              <strong>2018.</strong> Residencia Laboratorio de Interactividad Corporal, <Link href="https://chela.org.ar/" target="_blank" className="bg-sky-100">cheLA</Link>.
+            </li>
+          </ul>
+        </div>
+      </div>
       <div className="md:min-h-[calc(100vh-100px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="publicaciones">
         <div>
           <h1 className="mb-4 2xl:mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl pb-4">
@@ -92,6 +112,12 @@ export default async function Home() {
           </h1>
         </div>
         <div className="md:text-lg 2xl:text-3xl">
+          
+          <p className="pb-5 2xl:pb-10">
+              Sguiglia, F. (2026).
+              MNT2: A Longitudinal Evaluation of an Open-Source Mapping Software.
+              En <Link href="https://revistas.ufg.br/musica" target="_blank" className="bg-sky-100">Musica Hodie </Link> (en prensa).
+          </p>
           <p className="pb-5 2xl:pb-10">
               <Link href="https://www.cmmas.com/en/copy-5-of-ideassonicas25/ideassonicas%2Fsonicideas-23" target="_blank" className="bg-sky-100">
                 Sguiglia, F. (2024).
@@ -101,11 +127,6 @@ export default async function Home() {
               <Link href="https://en.cmmas.com/sonicideas" target="_blank" className="bg-sky-100">
                 Ideas Sónicas
               </Link>.
-          </p>
-          <p className="pb-5 2xl:pb-10">
-              Sguiglia, F. (2024).
-              Sistemas de interpolación gráfica aplicados al control de parámetros de síntesis.
-              En Juego Primitivo. Escritos sobre arte, música y tecnología desde la praxis (en prensa). 
           </p>
           <p className="pb-5 2xl:pb-10">
               Sguiglia, F. (2023).
@@ -125,23 +146,6 @@ export default async function Home() {
           </p>
         </div>
       </div>
-
-      <div className="md:min-h-[calc(100vh-100px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="patrocinadores">
-      <div>
-          <h1 className="mb-4 2xl:mb-8 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl pb-4">
-            Patrocinadores
-          </h1>
-        </div>
-        <div className="md:text-2xl 2xl:text-4xl">
-          <p>
-            El proyecto MNT comenzó en la residencia <Link href="https://chela.org.ar/modulo/lic/" target="_blank" className="bg-sky-100">LIC</Link> de <Link href="https://chela.org.ar/" target="_blank" className="bg-sky-100">cheLA</Link> (2018).
-            La primera versión de MNT se completó con el apoyo de un subsidio SAI 2018 de la Secretaría de Investigación de la <Link href="https://unq.edu.ar/" target="_blank" className="bg-sky-100">Universidad Nacional de Quilmes</Link>.
-            MNT2, la segunda iteración del proyecto, obtuvo en 2021 el primer premio en la categoría Tecnología Aplicada al Arte y la Cultura del concurso de arte y tecnología <Link href="https://fusion2020.frba.utn.edu.ar/" target="_blank" className="bg-sky-100">Fusion 2020</Link> (
-            <Link href="http://bienalkosice.com/" target="_blank" className="bg-sky-100">Bienal Kosice</Link> + <Link href="https://fusion2020.frba.utn.edu.ar/arcitec-arte-ciencia-y-tecnologia/" target="_blank" className="bg-sky-100">ARCITEC</Link>).
-          </p>
-        </div>
-      </div>
-
       <div className="md:min-h-[calc(100vh-140px)] md:mr-8 mr-12 scroll-mt-40 mb-20 md:mb-0" id="contacto">
         <div>
           <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl pb-4">

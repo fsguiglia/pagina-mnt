@@ -111,7 +111,7 @@ export default async function Home() {
             Publicaciones
           </h1>
         </div>
-        <div className="md:text-lg 2xl:text-3xl">
+        <div className="md:text-2xl 2xl:text-3xl">
           
           <p className="pb-5 2xl:pb-10">
               Sguiglia, F. (2026).
